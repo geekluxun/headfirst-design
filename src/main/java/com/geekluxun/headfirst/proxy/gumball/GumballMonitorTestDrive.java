@@ -13,6 +13,7 @@ public class GumballMonitorTestDrive {
 
         for (int i = 0; i < location.length; i++) {
             try {
+                // 从远程服务器上查找远程服务代理
                 GumballMachineRemote machine =
                         (GumballMachineRemote) Naming.lookup(location[i]);
                 monitor[i] = new GumballMonitor(machine);
@@ -23,6 +24,7 @@ public class GumballMonitorTestDrive {
         }
 
         for (int i = 0; i < monitor.length; i++) {
+            // 通过代理调用远程服务
             monitor[i].report();
         }
     }

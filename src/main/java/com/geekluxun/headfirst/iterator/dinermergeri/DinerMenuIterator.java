@@ -2,6 +2,10 @@ package com.geekluxun.headfirst.iterator.dinermergeri;
 
 import java.util.Iterator;
 
+/**
+ * 迭代器模式
+ * 实现了迭代器接口
+ */
 public class DinerMenuIterator implements Iterator {
     MenuItem[] list;
     int position = 0;

@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.state.gumballstate;
 
+/**
+ * 有币状态
+ */
 public class HasQuarterState implements State {
     GumballMachine gumballMachine;
 

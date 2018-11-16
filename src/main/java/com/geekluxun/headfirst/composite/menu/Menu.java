@@ -3,6 +3,9 @@ package com.geekluxun.headfirst.composite.menu;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * 组合模式
+ */
 public class Menu extends MenuComponent {
     ArrayList menuComponents = new ArrayList();
     String name;
@@ -37,7 +40,7 @@ public class Menu extends MenuComponent {
         System.out.print("\n" + getName());
         System.out.println(", " + getDescription());
         System.out.println("---------------------");
-
+        // 使用了迭代器模式
         Iterator iterator = menuComponents.iterator();
         while (iterator.hasNext()) {
             MenuComponent menuComponent =

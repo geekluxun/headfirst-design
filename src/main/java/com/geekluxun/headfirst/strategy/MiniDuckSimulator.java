@@ -15,6 +15,7 @@ public class MiniDuckSimulator {
         decoy.performQuack();
 
         model.performFly();
+        // 运行时动态的指定不同的飞行实现类
         model.setFlyBehavior(new FlyRocketPowered());
         model.performFly();
     }

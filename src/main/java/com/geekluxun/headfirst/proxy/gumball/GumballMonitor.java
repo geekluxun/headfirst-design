@@ -5,7 +5,7 @@ import java.rmi.RemoteException;
 public class GumballMonitor {
     GumballMachineRemote machine;
 
-    public GumballMonitor(GumballMachineRemote machine) {
+    public   GumballMonitor(GumballMachineRemote machine) {
         this.machine = machine;
     }
 

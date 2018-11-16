@@ -1,7 +1,6 @@
 package com.geekluxun.headfirst.observer.WeatherStation;
 
 import java.util.ArrayList;
-import java.util.Observer;
 
 public class WeatherData implements Subject {
     private ArrayList observers;
@@ -13,32 +12,25 @@ public class WeatherData implements Subject {
         observers = new ArrayList();
     }
 
-    public void registerObserver(java.util.Observer o) {
+    @Override
+    public void registerObserver(Observer o) {
         observers.add(o);
     }
 
-    public void removeObserver(java.util.Observer o) {
+    @Override
+    public void removeObserver(Observer o) {
         int i = observers.indexOf(o);
         if (i >= 0) {
             observers.remove(i);
         }
     }
 
-    @Override
-    public void registerObserver(com.geekluxun.headfirst.observer.WeatherStation.Observer o) {
-
-    }
-
-    @Override
-    public void removeObserver(com.geekluxun.headfirst.observer.WeatherStation.Observer o) {
-
-    }
 
     @Override
     public void notifyObservers() {
         for (int i = 0; i < observers.size(); i++) {
-            java.util.Observer observer = (Observer) observers.get(i);
-            //observer.update(temperature, humidity, pressure);
+            Observer observer = (Observer) observers.get(i);
+            observer.update(temperature, humidity, pressure);
         }
     }
 

@@ -2,6 +2,11 @@ package com.geekluxun.headfirst.factory.pizzafm;
 
 public class NYPizzaStore extends PizzaStore {
 
+    /**
+     * 工厂方法，子类完成对象实例化
+     * @param item
+     * @return
+     */
     Pizza createPizza(String item) {
         if (item.equals("cheese")) {
             return new NYStyleCheesePizza();

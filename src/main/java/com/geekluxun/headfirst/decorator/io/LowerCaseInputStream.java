@@ -4,6 +4,10 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * 实现自己的输入流装饰者类
+ * 提供新的行为"转换成小写"
+ */
 public class LowerCaseInputStream extends FilterInputStream {
 
     public LowerCaseInputStream(InputStream in) {

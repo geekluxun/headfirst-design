@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.facade.hometheater;
 
+/**
+ * 门面模式
+ */
 public class HomeTheaterFacade {
     Amplifier amp;
     Tuner tuner;
@@ -29,6 +32,10 @@ public class HomeTheaterFacade {
         this.popper = popper;
     }
 
+    /**
+     * 提供一个统一的简单接口供客户端使用
+     * @param movie
+     */
     public void watchMovie(String movie) {
         System.out.println("Get ready to watch a movie...");
         popper.on();

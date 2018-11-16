@@ -6,14 +6,21 @@ import java.io.InputStreamReader;
 
 public class CoffeeWithHook extends CaffeineBeverageWithHook {
 
+    @Override
     public void brew() {
         System.out.println("Dripping Coffee through filter");
     }
 
+    @Override
     public void addCondiments() {
         System.out.println("Adding Sugar and Milk");
     }
 
+    /**
+     * 覆盖基类的钩子方法，来改变算法的步骤
+     * @return
+     */
+    @Override
     public boolean customerWantsCondiments() {
 
         String answer = getUserInput();

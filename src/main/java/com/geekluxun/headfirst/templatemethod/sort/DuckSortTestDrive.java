@@ -16,7 +16,9 @@ public class DuckSortTestDrive {
 
         System.out.println("Before sorting:");
         display(ducks);
-
+        /**
+         * 这也是一个模板方法
+         */
         Arrays.sort(ducks);
 
         System.out.println("\nAfter sorting:");

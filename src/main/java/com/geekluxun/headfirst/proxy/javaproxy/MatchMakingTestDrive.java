@@ -3,6 +3,9 @@ package com.geekluxun.headfirst.proxy.javaproxy;
 import java.lang.reflect.Proxy;
 import java.util.Hashtable;
 
+/**
+ * JAVA动态代理
+ */
 public class MatchMakingTestDrive {
     Hashtable datingDB = new Hashtable();
 

@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.state.gumballstate;
 
+/**
+ * 销售糖果状态
+ */
 public class SoldState implements State {
 
     GumballMachine gumballMachine;

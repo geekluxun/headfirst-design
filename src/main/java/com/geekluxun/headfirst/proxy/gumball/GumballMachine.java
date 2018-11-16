@@ -3,6 +3,10 @@ package com.geekluxun.headfirst.proxy.gumball;
 import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 
+/**
+ * 远程服务代理
+ * UnicastRemoteObject 实现了代理的低层细节
+ */
 public class GumballMachine
         extends UnicastRemoteObject implements GumballMachineRemote {
     State soldOutState;

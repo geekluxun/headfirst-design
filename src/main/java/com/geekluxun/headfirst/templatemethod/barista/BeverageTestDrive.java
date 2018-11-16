@@ -5,7 +5,9 @@ public class BeverageTestDrive {
 
         Tea tea = new Tea();
         Coffee coffee = new Coffee();
-
+        /**
+         * 算法执行，算法以"模板"的形式封装在抽象类中
+         */
         System.out.println("\nMaking tea...");
         tea.prepareRecipe();
 

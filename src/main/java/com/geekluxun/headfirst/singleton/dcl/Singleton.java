@@ -11,6 +11,10 @@ public class Singleton {
     private Singleton() {
     }
 
+    /**
+     * 双重加锁实现单例（线程安全的）
+     * @return
+     */
     public static Singleton getInstance() {
         if (uniqueInstance == null) {
             synchronized (Singleton.class) {

@@ -3,7 +3,9 @@ package com.geekluxun.headfirst.factory.pizzaaf;
 public class PizzaTestDrive {
 
     public static void main(String[] args) {
+        // 纽约店
         PizzaStore nyStore = new NYPizzaStore();
+        // 芝加哥店
         PizzaStore chicagoStore = new ChicagoPizzaStore();
 
         Pizza pizza = nyStore.orderPizza("cheese");

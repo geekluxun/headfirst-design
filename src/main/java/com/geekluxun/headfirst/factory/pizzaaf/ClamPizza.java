@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.factory.pizzaaf;
 
+/**
+ * 披萨产品具体类
+ */
 public class ClamPizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;
 

@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.templatemethod.sort;
 
+/**
+ * 实现了比较接口
+ */
 public class Duck implements Comparable {
     String name;
     int weight;

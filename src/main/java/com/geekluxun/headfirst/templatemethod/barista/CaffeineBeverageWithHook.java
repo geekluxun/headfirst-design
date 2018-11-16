@@ -6,6 +6,7 @@ public abstract class CaffeineBeverageWithHook {
         boilWater();
         brew();
         pourInCup();
+        // 钩子
         if (customerWantsCondiments()) {
             addCondiments();
         }
@@ -23,6 +24,10 @@ public abstract class CaffeineBeverageWithHook {
         System.out.println("Pouring into cup");
     }
 
+    /**
+     * 钩子方法 子类可以覆盖它来"改变"算法的步骤
+     * @return
+     */
     boolean customerWantsCondiments() {
         return true;
     }

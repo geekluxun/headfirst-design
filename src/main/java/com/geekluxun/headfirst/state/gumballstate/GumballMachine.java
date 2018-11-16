@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.state.gumballstate;
 
+/**
+ * 糖果机
+ */
 public class GumballMachine {
 
     State soldOutState;

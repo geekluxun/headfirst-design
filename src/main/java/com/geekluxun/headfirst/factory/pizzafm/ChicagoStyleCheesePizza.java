@@ -10,6 +10,10 @@ public class ChicagoStyleCheesePizza extends Pizza {
         toppings.add("Shredded Mozzarella Cheese");
     }
 
+    /**
+     * 覆盖基类实现
+     */
+    @Override
     void cut() {
         System.out.println("Cutting the pizza into square slices");
     }

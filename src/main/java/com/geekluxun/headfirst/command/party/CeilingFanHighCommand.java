@@ -1,6 +1,9 @@
 package com.geekluxun.headfirst.command.party;
 
 public class CeilingFanHighCommand implements Command {
+    /**
+     * 命令的具体接受者（执行者）
+     */
     CeilingFan ceilingFan;
     int prevSpeed;
 

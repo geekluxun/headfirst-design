@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.factory.pizzaaf;
 
+/**
+ * 具体的Pizza产品
+ */
 public class CheesePizza extends Pizza {
     PizzaIngredientFactory ingredientFactory;
 

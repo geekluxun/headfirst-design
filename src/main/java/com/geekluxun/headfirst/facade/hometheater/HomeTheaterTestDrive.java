@@ -14,7 +14,7 @@ public class HomeTheaterTestDrive {
         HomeTheaterFacade homeTheater =
                 new HomeTheaterFacade(amp, tuner, dvd, cd,
                         projector, screen, lights, popper);
-
+        // 调用一个门面提供简单接口
         homeTheater.watchMovie("Raiders of the Lost Ark");
         homeTheater.endMovie();
     }

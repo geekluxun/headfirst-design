@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.factory.pizzaaf;
 
+/**
+ * 抽象工厂具体类（芝加哥原料工厂）
+ */
 public class ChicagoPizzaIngredientFactory
         implements PizzaIngredientFactory {
 

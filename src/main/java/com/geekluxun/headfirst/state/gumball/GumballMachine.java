@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.state.gumball;
 
+/**
+ * 没有使用状态模式的实现
+ */
 public class GumballMachine {
 
     final static int SOLD_OUT = 0;

@@ -5,6 +5,7 @@ public class DuckTestDrive {
         MallardDuck duck = new MallardDuck();
 
         WildTurkey turkey = new WildTurkey();
+        // 火鸡适配成鸭 这样客户端还用原来的"鸭"的接口调用
         Duck turkeyAdapter = new TurkeyAdapter(turkey);
 
         System.out.println("The Turkey says...");

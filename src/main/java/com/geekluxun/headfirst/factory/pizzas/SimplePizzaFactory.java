@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.factory.pizzas;
 
+/**
+ * 简单工厂方：把创建对象的代码集中到一起，通常会定义成static
+ */
 public class SimplePizzaFactory {
 
     public Pizza createPizza(String type) {

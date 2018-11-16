@@ -8,8 +8,11 @@ public class StarbuzzCoffee {
                 + " $" + beverage.cost());
 
         Beverage beverage2 = new DarkRoast();
+        // 用摩卡装饰
         beverage2 = new Mocha(beverage2);
+        // 再用摩卡装饰
         beverage2 = new Mocha(beverage2);
+        // 第3层装饰
         beverage2 = new Whip(beverage2);
         System.out.println(beverage2.getDescription()
                 + " $" + beverage2.cost());

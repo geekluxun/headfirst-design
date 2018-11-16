@@ -1,5 +1,8 @@
 package com.geekluxun.headfirst.factory.pizzas;
 
+/**
+ * 简单工厂方法
+ */
 public class PizzaStore {
     SimplePizzaFactory factory;
 

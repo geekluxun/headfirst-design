@@ -13,6 +13,9 @@ public class Waitress {
     }
 
     public void printMenu() {
+        /**
+         * 创建迭代器
+         */
         Iterator pancakeIterator = pancakeHouseMenu.createIterator();
         Iterator dinerIterator = dinerMenu.createIterator();
 
